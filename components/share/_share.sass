@@ -1,0 +1,118 @@
+.share
+  +clearfix
+  padding-bottom: 40px
+
+  &__back
+    background: $yellow
+    padding: 10px 40px
+    box-sizing: border-box
+    position: relative
+    width: 100%
+    height: 100%
+    +clearfix
+
+  &__box
+    width: 100%
+    padding: 10px 0
+    +clearfix
+    box-sizing: border-box
+
+    &.-col33
+      width: 33.33%
+      float: left
+      padding: 5px 10px
+      box-sizing: border-box
+
+    &.-padding
+      padding: 15px 0
+
+  &__btn
+    position: absolute
+    top: -40px
+    right: 0
+    border: 1px solid black
+    background: $yellow
+    padding: 8px 15px
+    font-size: 18px
+
+    &:hover
+      border: 1px solid $yellow
+      background: black
+      color: $yellow
+      cursor: pointer
+
+  &__bot
+    background: white
+    position: absolute
+    color: black
+    border: 1px solid black
+    bottom: -40px
+    right: 0
+    padding: 8px 40px
+    font-size: 18px
+
+    &:hover
+      border: 1px solid $yellow
+      background: black
+      color: $yellow
+      cursor: pointer
+
+  &__fa
+    float: left
+    padding: 2px 5px
+
+  &__text
+    font-weight: 700
+    font-size: 12px
+    color: gray
+    padding: 0 0 5px 10px
+
+    &.-float
+      display: inline-block
+      text-align: left
+      padding: 10px 0
+      font-size: 12px
+
+  &__item
+    padding: 5px 0 5px 0
+    width: 50%
+    box-sizing: border-box
+    position: relative
+    float: left
+    +clearfix
+
+    &.-cal
+      font-size: 20px
+
+    &.-padding
+      padding-right: 15px
+
+    &.-width
+      width: 100%
+      padding: 0
+
+  &__select
+    background: white
+    height: 34px
+    width: 100%
+    box-sizing: border-box
+
+  &__opt
+    color: black
+    background: white
+
+  &__input
+    padding: 7px 5px
+    font-size: 14px
+    box-sizing: border-box
+    width: 100%
+
+    &.-float
+      width: 115px
+      font-weight: 300
+
+  &__calendar
+    position: absolute
+    right: 5px
+    top: 50%
+    transform: translateY(-50%)

@@ -1,0 +1,64 @@
+@charset "UTF-8"
+
+//Global box-sizing: border-box
+html
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: border-box
+
+//ipad/iphone fix stylowania
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"]
+  -webkit-appearance: none
+  border-radius: 0
+
+body
+  min-width: 320px
+
+.clearfix
+  +clearfix
+
+header
+  z-index: +2
+  position: relative
+
+.col75
+  width: 75%
+  +clearfix
+  box-sizing: border-box
+  float: left
+
+.col25
+  width: 25%
+  padding: 0 0 0 10px
+  box-sizing: border-box
+  float: left
+
+.col50
+  width: 50%
+  padding: 0
+  box-sizing: border-box
+  float: left
+
+.col60
+  width: 60%
+  box-sizing: border-box
+  padding: 0
+  float: left
+
+.col40
+  width: 40%
+  box-sizing: border-box
+  padding: 0
+  float: left
+
+.col33
+  width: 33.33%
+  float: left
+  padding: 10px
+  box-sizing: border-box
+
+footer

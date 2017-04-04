@@ -1,0 +1,70 @@
+.content
+  +clearfix
+  color: black
+  padding: 0 0 0 10px
+
+  &__box
+    width: 100%
+    +clearfix
+
+    &.-col33
+      width: 33.33%
+      float: left
+      padding: 20px 0
+      position: relative
+      display: block
+
+    &.-padding
+      padding-bottom: 100px
+
+  &__title
+    float: left
+    font-size: 34px
+    padding: 15px 30px
+    text-align: center
+    background: $yellow
+    font-weight: 700
+
+  &__text
+    color: gray
+    float: left
+
+    &.-black
+      color: black
+
+  &__img
+    width: 100%
+    box-sizing: border-box
+    +clearfix
+
+  &__bot
+    display: block
+    position: absolute
+    bottom: -150px
+    left: 15px
+
+    &.-less
+      bottom: 0
+      padding-left: 10px
+
+  &__name
+    font-weight: 700
+
+    &.-big
+      font-size: 18px
+
+  &__border
+    font-size: 18px
+    font-weight: 700
+    border-bottom: 1px solid gray
+    width: 33.33%
+    padding: 10px 0
+    margin-bottom: 20px
+
+  &__more
+    padding: 0
+    text-align: left
+
+    &.-float
+      padding: 0 10px 0 0
+      float: left

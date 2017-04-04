@@ -1,0 +1,25 @@
+.menu
+  .container
+    .menu__bars(type="button")
+      i.menu__fa.fa.fa-bars(aria-hidden="true")
+    a.menu__logo(href="main.html")
+      include ../logo/_logo
+
+
+    .menu__nav.-border
+      .menu__box
+        a.menu__item(href="main.html") Forum
+        a.menu__item(href="family.html") Reklama
+        a.menu__item(href="offer.html") Kontakt
+
+      .menu__box.-float
+        .menu__text Zaloguj się:
+        input.menu__input.-margin(placeholder="Login_")
+        input.menu__input(placeholder="Haslo_")
+
+    .menu__nav
+      .menu__box.-full
+        input.menu__input.-none(placeholder="wpisz szukaną frazę")
+        button.menu__btn(type="button") SZUKAJ
+
+

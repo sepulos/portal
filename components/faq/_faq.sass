@@ -1,0 +1,46 @@
+.faq
+  +clearfix
+  background: $yellow
+  padding: 10px 0 10px 15px
+  width: 100%
+  box-sizing: border-box
+
+  &__box
+    width: 100%
+    +clearfix
+    display: block
+    position: relative
+    padding: 10px 0
+
+    &:hover
+      opacity: 0.8
+
+  &__text
+    line-height: 19px
+    +PHONE_ONLY
+      font-size: 12px
+      width: 70%
+
+    .faq__box:hover &
+      color: white
+      text-shadow: -1px 1px 3px black
+
+    &.-more
+      font-size: 18px
+      +PHONE_ONLY
+        font-size: 14px
+
+  &__img
+    position: absolute
+    top: 10px
+    right: 10px
+    width: 30px
+    height: 30px
+    +PHONE_ONLY
+      width: 25px
+      height: 25px
+    +PHONE_ONLY_480
+      width: 30px
+      height: 30px
+      top: 10px
+      right: 10px

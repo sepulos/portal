@@ -1,0 +1,88 @@
+.btns
+  +clearfix
+
+  &__box
+    width: 100%
+    +clearfix
+    padding-bottom: 10px
+    text-align: center
+
+    &.-half
+      width: 50%
+      float: left
+      padding: 0 5px
+      box-sizing: border-box
+      +clearfix
+
+  &__item
+    color: black
+    padding: 5px 10px
+    margin-right: 10px
+    background: $yellow
+    border: 1px solid $yellow
+    font-weight: 700
+    width: 31%
+    box-sizing: border-box
+    display: inline-block
+    float: left
+    font-size: 12px
+    text-align: center
+
+    &:hover
+      border: 1px solid black
+
+    &:last-child
+      margin-right: 0
+
+    &.-big
+      text-align: right
+      padding: 20px 30px 15px
+      width: calc(100% - 9px)
+      box-sizing: border-box
+
+    &.-blueR
+      background: $blue
+      width: 100%
+      padding: 20px 10px
+      color: white
+      position: relative
+      text-align: right
+      border: 2px solid $blue
+
+      &:hover
+        border: 2px solid black
+        color: black
+        background: $yellow
+
+    &.-blueC
+      background: $blue
+      width: 100%
+      padding: 20px 10px
+      color: white
+      position: relative
+      text-align: center
+      border: 2px solid $blue
+
+      &:hover
+        border: 2px solid black
+        color: black
+        background: $yellow
+
+  &__fa
+    float: left
+    border: 2px solid white
+    border-radius: 50%
+    padding: 8px 8px 5px
+    color: white
+    position: absolute
+    left: 20px
+    top: 15px
+
+    &.-border
+      top: 0
+      left: 0
+      position: relative
+      color: black
+      border: 4px solid black
+      border-radius: 0
+      margin-top: -3px

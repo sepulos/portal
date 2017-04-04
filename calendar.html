@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Mixman</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Szablon przykładowy">
+    <meta name="description" content="Szablon przykładowy opis">
+    <meta name="keywords" content="Szablon przykładowy keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/components/favicon/src/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/components/favicon/src/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/components/favicon/src/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/components/favicon/src/manifest.json">
+    <link rel="shortcut icon" href="/components/favicon/src/favicon.ico">
+    <meta name="msapplication-config" content="/components/favicon/src/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script>
+      document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+        + ':35729/livereload.js"></'
+        + 'script>')
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="menu">
+        <div class="container">
+          <div class="menu__bars" type="button"><i class="menu__fa fa fa-bars" aria-hidden="true"></i></div><a class="menu__logo" href="main.html">
+            <div class="logo"><img class="logo__img" src="components/logo/src/logo.png" alt="Logo strony"></div></a>
+          <div class="menu__nav -border">
+            <div class="menu__box"><a class="menu__item" href="main.html">Forum</a><a class="menu__item" href="family.html">Reklama</a><a class="menu__item" href="offer.html">Kontakt</a></div>
+            <div class="menu__box -float">
+              <div class="menu__text">Zaloguj się:</div>
+              <input class="menu__input -margin" placeholder="Login_">
+              <input class="menu__input" placeholder="Haslo_">
+            </div>
+          </div>
+          <div class="menu__nav">
+            <div class="menu__box -full">
+              <input class="menu__input -none" placeholder="wpisz szukaną frazę">
+              <button class="menu__btn" type="button">SZUKAJ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="days">
+      <div class="title">
+        <div class="container">
+          <div class="title__box">
+            <div class="title__text -date">Dziś jest czwartek 27 września 2015 roku</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ads">
+      <div class="ad">
+        <div class="container"><img class="ad__box" src="components/ad/src/ad.jpg" alt="ad">
+          <div class="ad__text">PRZESTRZEŃ KOMERCYJNA</div>
+        </div>
+      </div>
+    </div>
+    <div class="cal__share">
+      <div class="share">
+        <div class="container">
+          <div class="share__box">
+            <div class="title">
+              <div class="title__box -margin">
+                <div class="title__text -title">KALENDARAZ IMPREZ</div>
+              </div>
+            </div>
+          </div>
+          <div class="share__back">
+            <div class="share__box">
+              <button class="share__btn" type="button">DODAJ BIEG
+                <div class="share__fa fa fa-plus-square-o"></div>
+              </button>
+              <form class="share__form">
+                <div class="share__box -col33">
+                  <div class="share__box">
+                    <div class="share__text">Nazwa</div>
+                    <div class="share__item -padding">
+                      <select class="share__select -width" name="Nazwa">
+                        <option class="share__opt" value="Wybierz">Wybierz</option>
+                        <option class="share__opt" value="Wybierz">Wybierz2</option>
+                        <option class="share__opt" value="Wybierz">Wybierz3</option>
+                        <option class="share__opt" value="Wybierz">Wybierz4</option>
+                      </select>
+                    </div>
+                    <div class="share__item">
+                      <input class="share__input" placeholder="Wpisz nazwę...">
+                    </div>
+                  </div>
+                  <div class="share__box">
+                    <div class="share__text">Termin</div>
+                    <div class="share__item -cal">
+                      <div class="share__text -float">od:</div>
+                      <input class="share__input -float" type="date">
+                      <div class="share__calendar fa fa-calendar"></div>
+                    </div>
+                    <div class="share__item -cal">
+                      <div class="share__text -float">do:</div>
+                      <input class="share__input -float" type="date">
+                      <div class="share__calendar fa fa-calendar"></div>
+                    </div>
+                  </div>
+                  <div class="share__box">
+                    <div class="share__text">Miejsce</div>
+                    <div class="share__item -padding">
+                      <select class="share__select" name="Nazwa">
+                        <option class="share__opt" value="Wybierz">Wybierz</option>
+                        <option class="share__opt" value="Wybierz">Wybierz2</option>
+                        <option class="share__opt" value="Wybierz">Wybierz3</option>
+                        <option class="share__opt" value="Wybierz">Wybierz4</option>
+                      </select>
+                    </div>
+                    <div class="share__item">
+                      <input class="share__input" placeholder="Wpisz nazwę...">
+                    </div>
+                  </div>
+                  <div class="share__box">
+                    <div class="share__text">Dystans KM</div>
+                    <div class="share__item -width">
+                      <select class="share__select" name="Nazwa">
+                        <option class="share__opt" value="Wybierz">Wybierz</option>
+                        <option class="share__opt" value="Wybierz">Wybierz2</option>
+                        <option class="share__opt" value="Wybierz">Wybierz3</option>
+                        <option class="share__opt" value="Wybierz">Wybierz4</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="share__box -col33">
+                  <div class="share__box -padding">
+                    <div class="share__text">Rodzaj</div>
+                    <div class="share__item -width">
+                      <select class="share__select" name="Nazwa">
+                        <option class="share__opt" value="Wybierz">Wybierz</option>
+                        <option class="share__opt" value="Wybierz">Wybierz2</option>
+                        <option class="share__opt" value="Wybierz">Wybierz3</option>
+                        <option class="share__opt" value="Wybierz">Wybierz4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="share__box -padding">
+                    <div class="share__text">Atest</div>
+                    <div class="share__item -width">
+                      <select class="share__select" name="Nazwa">
+                        <option class="share__opt" value="Wybierz">Wybierz</option>
+                        <option class="share__opt" value="Wybierz">Wybierz2</option>
+                        <option class="share__opt" value="Wybierz">Wybierz3</option>
+                        <option class="share__opt" value="Wybierz">Wybierz4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="share__box -padding">
+                    <div class="share__text">Odpłatność</div>
+                    <div class="share__item -width">
+                      <select class="share__select" name="Nazwa">
+                        <option class="share__opt" value="Wybierz">Wybierz</option>
+                        <option class="share__opt" value="Wybierz">Wybierz2</option>
+                        <option class="share__opt" value="Wybierz">Wybierz3</option>
+                        <option class="share__opt" value="Wybierz">Wybierz4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="share__box -padding">
+                    <div class="share__text">Startujących</div>
+                    <div class="share__item -width">
+                      <select class="share__select" name="Nazwa">
+                        <option class="share__opt" value="Wybierz">Wybierz</option>
+                        <option class="share__opt" value="Wybierz">Wybierz2</option>
+                        <option class="share__opt" value="Wybierz">Wybierz3</option>
+                        <option class="share__opt" value="Wybierz">Wybierz4</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="share__box -col33">
+                  <div class="share__box -padding">
+                    <div class="share__text">Cykliczność</div>
+                    <div class="share__item -width">
+                      <select class="share__select" name="Nazwa">
+                        <option class="share__opt" value="Wybierz">Wybierz</option>
+                        <option class="share__opt" value="Wybierz">Wybierz2</option>
+                        <option class="share__opt" value="Wybierz">Wybierz3</option>
+                        <option class="share__opt" value="Wybierz">Wybierz4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="share__box -padding">
+                    <div class="share__text">Możliwość biegu z wózkiem dziecięcym</div>
+                    <div class="share__item -width">
+                      <select class="share__select" name="Nazwa">
+                        <option class="share__opt" value="Wybierz">Wybierz</option>
+                        <option class="share__opt" value="Wybierz">Wybierz2</option>
+                        <option class="share__opt" value="Wybierz">Wybierz3</option>
+                        <option class="share__opt" value="Wybierz">Wybierz4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="share__box -padding">
+                    <div class="share__text">Możliwość biegu z psem</div>
+                    <div class="share__item -width">
+                      <select class="share__select" name="Nazwa">
+                        <option class="share__opt" value="Wybierz">Wybierz</option>
+                        <option class="share__opt" value="Wybierz">Wybierz2</option>
+                        <option class="share__opt" value="Wybierz">Wybierz3</option>
+                        <option class="share__opt" value="Wybierz">Wybierz4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="share__box -padding">
+                    <div class="share__text">Dodatkowe modyfikacje</div>
+                    <div class="share__item -width">
+                      <select class="share__select" name="Nazwa">
+                        <option class="share__opt" value="Wybierz">Wybierz</option>
+                        <option class="share__opt" value="Wybierz">Wybierz2</option>
+                        <option class="share__opt" value="Wybierz">Wybierz3</option>
+                        <option class="share__opt" value="Wybierz">Wybierz4</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <button class="share__bot" type="button">FILTRUJ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab">
+      <div class="table">
+        <div class="container">
+          <table class="table__table">
+            <tr class="table__tableRow -border">
+              <td class="table__tableData">DATA
+                <div class="table__fa fa fa-sort-desc"></div>
+              </td>
+              <td class="table__tableData">NAZWA IMPREZY
+                <div class="table__fa fa fa-sort-desc"></div>
+              </td>
+              <td class="table__tableData">MIEJSCE
+                <div class="table__fa fa fa-sort-desc"></div>
+              </td>
+              <td class="table__tableData">DYSTANS(M)
+                <div class="table__fa fa fa-sort-desc"></div>
+              </td>
+              <td class="table__tableData">RODZAJ
+                <div class="table__fa fa fa-sort-desc"></div>
+              </td>
+              <td class="table__tableData">ILOSĆ MIEJSC
+                <div class="table__fa fa fa-sort-desc"></div>
+              </td>
+              <td class="table__tableData">ATEST
+                <div class="table__fa">
+                  <div class="fa fa-sort-desc"></div>
+                </div>
+              </td>
+              <td class="table__tableData">PROGNOZA POGODY
+                <div class="table__fa fa fa-sort-desc"></div>
+              </td>
+              <td class="table__tableData -right">Drukuj stronę<img class="table__fa" src="components/table/src/print.png" alt="print"></td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+            <tr class="table__tableRow">
+              <td class="table__tableData">
+                <div class="table__text">02.08.2015</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">IV Maraton Warmia-Mazury</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Szczytno k.Olsztyna</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">42195</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">Uliczny</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">10000</div>
+              </td>
+              <td class="table__tableData">
+                <div class="table__text">PZLA,IAAF,AIMS</div>
+              </td>
+              <td class="table__tableData -padding">
+                <div class="table__text -weather"><img class="table__icon -small" src="components/table/src/more.png" alt="more"><img class="table__icon" src="components/table/src/sun.png" alt="sun">
+                  <div class="table__fa">16&#176;</div>
+                </div>
+              </td>
+              <td class="table__tableData -right">
+                <div class="table__item"><a class="table__btn" href="#">Regulamin</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Zapisz się</a></div>
+                <div class="table__item"><a class="table__btn" href="#">Wyniki</a></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="pages">
+        <div class="page"><a class="page__item -small" href="#">&lt;&lt;</a><a class="page__item" href="#">1</a><a class="page__item" href="#">2</a><a class="page__item" href="#">3</a><a class="page__item" href="#">4</a><a class="page__item" href="#">5</a><a class="page__item" href="#">...12...</a><a class="page__item" href="#">20</a><a class="page__item" href="#">21</a><a class="page__item" href="#">22</a><a class="page__item" href="#">23</a><a class="page__item" href="#">24</a><a class="page__item -small" href="#">&gt;&gt;</a></div>
+      </div>
+    </div>
+    <div class="ads">
+      <div class="ad">
+        <div class="container"><img class="ad__box" src="components/ad/src/ad.jpg" alt="ad">
+          <div class="ad__text">PRZESTRZEŃ KOMERCYJNA</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__box -float">
+          <div class="footer__nav"><a class="footer__item" href="main.html">Forum</a><a class="footer__item" href="family.html">Reklama</a><a class="footer__item" href="offer.html">Kontakt</a></div>
+        </div>
+        <div class="footer__box">
+          <div class="footer__text">&copy; Copyright by 2015 <b> Portal Biegowy </b> All rights Reserved</div>
+          <div class="footer__created">projekt i realizacja Artneo.pl</div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/main.min.js"></script>
+  </body>
+</html>

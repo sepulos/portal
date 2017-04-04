@@ -1,0 +1,44 @@
+.bigBtn
+  +clearfix
+  width: 100%
+
+  &__item
+    margin-top: 20px
+    padding: 30px
+    +clearfix
+    width: 100%
+    background: $yellow
+    font-size: 30px
+    box-sizing: border-box
+
+    &.-black
+      background: black
+      color: $yellow
+
+  &__fa
+    float: left
+    padding: 20px 20px
+
+  &__text
+    padding: 10px 0
+    float: left
+
+  &__btn
+    margin-top: 10px
+    float: right
+    font-size: 18px
+    padding: 10px 30px
+    border: 2px solid $yellow
+
+    &:hover
+      color: black
+      background: $yellow
+      border: 2px solid black
+
+    &.-black
+      border: 2px solid black
+
+      &:hover
+        color: $yellow
+        background: black
+        border: 2px solid $yellow

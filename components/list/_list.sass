@@ -1,0 +1,35 @@
+.list
+  width: 100%
+
+  &__table
+    width: 100%
+
+  &__row
+    padding: 20px 10px
+    text-align: left
+    width: 100%
+
+    &:nth-of-type(odd)
+      background: #e6e6e6
+
+    &:nth-of-type(even)
+      background: #f0f0f0
+
+  &__data
+    padding: 10px
+    text-align: center
+
+    &.-yellow
+      background: $yellow
+      border: 1px solid black
+      font-weight: 700
+      padding: 20px 10px
+      width: 20%
+
+      &:last-child
+        width: 10%
+
+      &:first-child
+        width: 8%
+  &__fa
+    float: right

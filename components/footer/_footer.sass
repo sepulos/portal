@@ -1,0 +1,37 @@
+.footer
+  width: 100%
+  +clearfix
+
+  &__box
+    width: 100%
+    float: left
+
+    &.-float
+      float: right
+
+  &__text
+    color: black
+    float: left
+
+  &__created
+    font-size: 12px
+    color: gray
+    text-align: right
+
+  &__nav
+    float: right
+    padding: 10px 0
+    margin-bottom: 20px
+    border-bottom: 1px solid lightgray
+    min-width: 400px
+    text-align: right
+
+  &__item
+    display: inline-block
+    font-size: 12px
+    padding: 10px
+
+    &:hover
+      background: black
+      color: $yellow
+      text-shadow: -1px 0 0px black

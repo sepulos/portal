@@ -1,0 +1,102 @@
+.slider
+  +clearfix
+
+  &__title
+    +flex
+    height: 85px
+    font-size: 24px
+    position: relative
+    border-top: 1px solid gray
+    +clearfix
+    +PHONE_ONLY_600
+      height: 20px
+
+  &__news
+    width: 50%
+    float: left
+
+  &__newsBox
+    width: 100%
+    box-sizing: border-box
+
+  &__newsImg
+    width: 100%
+    height: auto
+
+  &__prev
+    position: absolute
+    top: 15px
+    padding-top: 8px
+    left: 0
+    font-size: 30px
+    color: white
+    z-index: 3
+    cursor: pointer
+    background: #c4c4c4
+    +clearfix
+    height: 45px
+    width: 50px
+    +flex
+    transition: background 1s
+    +PHONE_ONLY_600
+      font-size: 20px
+      height: 30px
+      width: 30px
+      padding-top: 3px
+      padding-left: 2px
+
+    &:hover
+      background: gray
+
+  &__next
+    position: absolute
+    top: 15px
+    padding-top: 8px
+    right: 0
+    font-size: 30px
+    color: white
+    z-index: 3
+    cursor: pointer
+    text-align: center
+    background: #c4c4c4
+    +clearfix
+    height: 45px
+    width: 50px
+    +flex
+    transition: background 1s
+    +PHONE_ONLY_600
+      font-size: 20px
+      height: 30px
+      width: 30px
+      padding-top: 3px
+      padding-left: 2px
+
+    &:hover
+      background: gray
+
+  &__dots
+    position: absolute
+    left: 50%
+    top: -40px
+    display: flex
+    transform: translateX(-50%)
+
+  &__tab
+    justify-content: center
+    width: 10px
+    height: 10px
+    float: left
+    background: $gray
+    margin: 3px
+    font-size: 0
+    border: none
+
+.slick-active button
+  justify-content: center
+  width: 10px
+  height: 10px
+  float: left
+  background: lightgrey
+  margin: 3px
+  font-size: 0
+  border: none

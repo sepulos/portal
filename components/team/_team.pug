@@ -1,0 +1,35 @@
+-var title2 = "TEAMY W POLSCE";
+-var add ="DODAJ TEAM";
+.team
+  .container
+
+    .team__title
+      .team__box
+        include ../title/_title-print
+    .team__box
+      .team__box.-col60
+        .team__map
+          include ../map/_map
+
+      .team__box.-col40
+        include ../teamItem/_teamItem
+
+
+    .team__box.-col25
+      .team__add
+        include ../add/_add
+
+      img.team__ad(src="components/team/src/ad.jpg" alt="best")
+
+      .team__contact
+        include ../contact/_contact
+
+      .team__login
+        include ../login/_login
+
+      .team__faq
+        include ../faq/_faq
+
+
+      .team__fb
+        include ../fb/_fb
