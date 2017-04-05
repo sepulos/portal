@@ -1,10 +1,11 @@
 .share
   +clearfix
-  padding-bottom: 40px
+  box-sizing: border-box
 
   &__back
     background: $yellow
     padding: 10px 40px
+    margin-bottom: 40px
     box-sizing: border-box
     position: relative
     width: 100%
@@ -16,24 +17,32 @@
     padding: 10px 0
     +clearfix
     box-sizing: border-box
+    position: relative
 
     &.-col33
       width: 33.33%
       float: left
       padding: 5px 10px
       box-sizing: border-box
+      +TAB_ONLY_880
+        width: 100%
+      +PHONE_ONLY_600
+        padding: 5px
 
     &.-padding
       padding: 15px 0
 
   &__btn
     position: absolute
-    top: -40px
+    top: -50px
     right: 0
     border: 1px solid black
     background: $yellow
     padding: 8px 15px
     font-size: 18px
+    +PHONE_ONLY_600
+      font-size: 15px
+      top: -47px
 
     &:hover
       border: 1px solid $yellow
@@ -46,10 +55,14 @@
     position: absolute
     color: black
     border: 1px solid black
-    bottom: -40px
+    bottom: -49px
     right: 0
     padding: 8px 40px
     font-size: 18px
+    +PHONE_ONLY_600
+      font-size: 15px
+      padding: 8px 30px
+      bottom: -45px
 
     &:hover
       border: 1px solid $yellow
@@ -83,6 +96,8 @@
 
     &.-cal
       font-size: 20px
+      +PHONE_ONLY_480
+        width: 100%
 
     &.-padding
       padding-right: 15px
@@ -108,7 +123,7 @@
     width: 100%
 
     &.-float
-      width: 115px
+      width: 60%
       font-weight: 300
 
   &__calendar

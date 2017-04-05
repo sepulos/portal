@@ -6,6 +6,8 @@
     +clearfix
     padding-bottom: 10px
     text-align: center
+    +PHONE_ONLY_600
+      width: 100%
 
     &.-half
       width: 50%
@@ -13,6 +15,11 @@
       padding: 0 5px
       box-sizing: border-box
       +clearfix
+      +PHONE_ONLY_600
+        margin: 5px 0
+        width: 100%
+        padding: 0
+        float: none
 
   &__item
     color: black
@@ -27,6 +34,8 @@
     float: left
     font-size: 12px
     text-align: center
+    +TAB_MAX
+      margin-right: 5px
 
     &:hover
       border: 1px solid black
@@ -39,6 +48,8 @@
       padding: 20px 30px 15px
       width: calc(100% - 9px)
       box-sizing: border-box
+      +PHONE_ONLY_600
+        width: 100%
 
     &.-blueR
       background: $blue
@@ -48,6 +59,8 @@
       position: relative
       text-align: right
       border: 2px solid $blue
+      +PHONE_ONLY_600
+        text-align: center
 
       &:hover
         border: 2px solid black

@@ -4,39 +4,42 @@
 .text
   .container
     .text__title
-      .text__box
+      .col75
         include ../title/_title-print
-    .text__box
-      .text__item
+    .col75
+      .col100
         include ../textItem/_textItem1
-      .text__item
+      .col100
         include ../textItem/_textItem2
-      .text__item
+      .col100
         include ../textItem/_textItem3
-      .text__item
+      .col100
         include ../textItem/_textItem4
-      .text__item
+      .col100
         include ../textItem/_textItem5
-      .text__item
+      .col100
         include ../textItem/_textItem6
-      .text__item
+      .col100
         include ../textItem/_textItem7
-      .text__item
+      .col100
         include ../page/_page
 
-      .text__title
+      .col100
         include ../title/_title
 
-      .text__best
+      .col100
         include ../best/_best
 
-    .text__box.-col25
+    .col25
+
       img.text__ad(src="components/text/src/ad.jpg" alt="best")
 
       .text__weather
         include ../weather/_weather
+
       .text__faq
         include ../faq/_faq
+
       .text__actual
         include ../actual/_actual-small
 

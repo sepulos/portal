@@ -1,16 +1,21 @@
 .contact
   +clearfix
+  margin-bottom: 10px
 
   &__box
     width: 100%
     padding: 20px 25px 5px
     color: black
     box-sizing: border-box
+    +PHONE_ONLY_600
+      padding: 20px 15px 5px
 
     &.-border
       border-left: 5px dotted black
       margin-left: 25px
       height: 60px
+      +PHONE_ONLY_600
+        margin: 0
 
     &.-half
       width: 50%

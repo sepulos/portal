@@ -2,41 +2,19 @@
   +clearfix
   padding-top: 10px
 
-  &__box
-    width: 75%
-    +clearfix
-    box-sizing: border-box
-    float: left
-
-    &.-width
-      width: 33.33%
-      float: left
-      padding: 10px
-      box-sizing: border-box
-
-    &.-col25
-      width: 25%
-      padding: 0 0 0 10px
-
-    &.-col50
-      width: 50%
-      box-sizing: border-box
-      padding: 0
-
-    &.-col60
-      width: 60%
-      box-sizing: border-box
-      padding: 0
-
-    &.-col40
-      width: 40%
-      box-sizing: border-box
-      padding: 0
-
   &__ad
     border: 1px solid lightgray
     width: 100%
     box-sizing: border-box
+    +TAB_MAX
+      width: 50%
+      padding: 10px
+      box-sizing: border-box
+      border: none
+      +clearfix
+    +PHONE_ONLY_600
+      width: 100%
+      padding: 0
 
   &__title
     text-align: left
@@ -58,13 +36,61 @@
     width: 100%
     height: 100%
 
-  &__login
-    margin: 20px 0
-
-  &__comment
+  &__faq
+    padding: 10px
     width: 100%
-    box-sizing: border-box
-    +clearfix
+    +TAB_MAX
+      width: 50%
+      box-sizing: border-box
+      +clearfix
+      display: inline-grid
+    +PHONE_ONLY_600
+      width: 100%
+      padding: 10px 0
+
+  &__login
+    padding: 10px
+    +TAB_MAX
+      width: 50%
+      box-sizing: border-box
+      display: flex
+      flex-wrap: wrap
+      +clearfix
+    +PHONE_ONLY_600
+      width: 100%
+      padding: 10px 0
+
+  &__fb
+    padding: 10px
+    +TAB_MAX
+      width: 50%
+      box-sizing: border-box
+      +clearfix
+      +PHONE_ONLY_600
+        width: 100%
+        padding: 10px 0
+
+  &__add
+    padding: 10px
+    width: 100%
+    +TAB_MAX
+      width: 50%
+      box-sizing: border-box
+      +clearfix
+    +PHONE_ONLY_600
+      width: 100%
+      padding: 10px 0
+
+  &__actual
+    padding: 10px
+    width: 100%
+    +TAB_MAX
+      width: 50%
+      box-sizing: border-box
+      +clearfix
+    +PHONE_ONLY_600
+      width: 100%
+      padding: 10px 0
 
   &__map
     display: block

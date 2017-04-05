@@ -27,20 +27,21 @@
     <div class="header">
       <div class="menu">
         <div class="container">
+          <div class="menu__bars-vis" type="button"><i class="menu__fa fa fa-bars" aria-hidden="true"></i></div>
           <div class="menu__bars" type="button"><i class="menu__fa fa fa-bars" aria-hidden="true"></i></div><a class="menu__logo" href="main.html">
             <div class="logo"><img class="logo__img" src="components/logo/src/logo.png" alt="Logo strony"></div></a>
-          <div class="menu__nav -border">
+          <div class="menu__nav">
             <div class="menu__box"><a class="menu__item" href="main.html">Forum</a><a class="menu__item" href="family.html">Reklama</a><a class="menu__item" href="offer.html">Kontakt</a></div>
             <div class="menu__box -float">
               <div class="menu__text">Zaloguj się:</div>
               <input class="menu__input -margin" placeholder="Login_">
               <input class="menu__input" placeholder="Haslo_">
             </div>
-          </div>
-          <div class="menu__nav">
             <div class="menu__box -full">
-              <input class="menu__input -none" placeholder="wpisz szukaną frazę">
-              <button class="menu__btn" type="button">SZUKAJ</button>
+              <div class="menu__border">
+                <input class="menu__input -none" placeholder="wpisz szukaną frazę">
+                <button class="menu__btn" type="button">SZUKAJ</button>
+              </div>
             </div>
           </div>
         </div>
@@ -66,22 +67,22 @@
       <div class="runContent">
         <div class="container">
           <div class="runContent__title">
-            <div class="runContent__box">
+            <div class="col75">
               <div class="title">
-                <div class="title__box">
+                <div class="title__box -padding">
                   <div class="title__text -title">SZCZEGÓŁY BIEGU</div><a class="title__icon" href="#">
                     <div class="title__print">Drukuj stronę</div><img class="title__fa" src="components/title/src/print.png" alt="print"></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="runContent__box">
-            <div class="runContent__box -col60">
+          <div class="col75">
+            <div class="col60">
               <div class="runContent__map">
                 <div class="map"><img class="map__img" src="components/map/src/map.jpg" alt="map"></div>
               </div>
             </div>
-            <div class="runContent__box -col40">
+            <div class="col40">
               <div class="info">
                 <div class="info__content">
                   <div class="info__title">NAZWA BIEGU:</div>
@@ -151,7 +152,7 @@
                 </div>
               </div>
             </div>
-            <div class="runContent__btns">
+            <div class="col100">
               <div class="btns">
                 <div class="btns__box">
                   <div class="btns__box -half"><a class="btns__item" href="#">Regulamin</a><a class="btns__item" href="#">Zapisz się</a><a class="btns__item" href="#">Wyniki</a></div>
@@ -167,7 +168,7 @@
                 </div>
               </div>
             </div>
-            <div class="runContent__track">
+            <div class="col100">
               <div class="track">
                 <div class="track__title">
                   <div class="title">
@@ -181,7 +182,7 @@
                 </div>
               </div>
             </div>
-            <div class="runContent__plot">
+            <div class="col100">
               <div class="plot">
                 <div class="plot__title">
                   <div class="title">
@@ -193,7 +194,7 @@
                 <div class="plot__box"><img class="plot__track" src="components/plot/src/plot.jpg" alt="track"></div>
               </div>
             </div>
-            <div class="runContent__list">
+            <div class="col100">
               <div class="list">
                 <div class="list__title">
                   <div class="title">
@@ -256,7 +257,7 @@
                 </table>
               </div>
             </div>
-            <div class="runContent__list">
+            <div class="col100">
               <div class="list">
                 <div class="list__title">
                   <div class="title">
@@ -281,11 +282,11 @@
                 </table>
               </div>
             </div>
-            <div class="runContent__comment">
+            <div class="col100">
               <div class="comment"><img class="comment__img" src="components/comment/src/comment.jpg" alt="comment"></div>
             </div>
           </div>
-          <div class="runContent__box -col25">
+          <div class="col25">
             <div class="runContent__add">
               <div class="add">
                 <div class="add__text">DODAJ BIEG</div><a class="add__fa -border fa fa-plus" href="#"></a>

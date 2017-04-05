@@ -2,6 +2,8 @@
   +clearfix
   color: black
   padding: 0 0 0 10px
+  +PHONE_ONLY_480
+    padding: 0
 
   &__box
     width: 100%
@@ -40,8 +42,12 @@
   &__bot
     display: block
     position: absolute
-    bottom: -150px
+    bottom: -130px
     left: 15px
+    +TAB_MAX
+      bottom: -100px
+    +PHONE_ONLY_480
+      bottom: -80px
 
     &.-less
       bottom: 0

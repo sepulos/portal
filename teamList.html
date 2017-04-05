@@ -27,20 +27,21 @@
     <div class="header">
       <div class="menu">
         <div class="container">
+          <div class="menu__bars-vis" type="button"><i class="menu__fa fa fa-bars" aria-hidden="true"></i></div>
           <div class="menu__bars" type="button"><i class="menu__fa fa fa-bars" aria-hidden="true"></i></div><a class="menu__logo" href="main.html">
             <div class="logo"><img class="logo__img" src="components/logo/src/logo.png" alt="Logo strony"></div></a>
-          <div class="menu__nav -border">
+          <div class="menu__nav">
             <div class="menu__box"><a class="menu__item" href="main.html">Forum</a><a class="menu__item" href="family.html">Reklama</a><a class="menu__item" href="offer.html">Kontakt</a></div>
             <div class="menu__box -float">
               <div class="menu__text">Zaloguj się:</div>
               <input class="menu__input -margin" placeholder="Login_">
               <input class="menu__input" placeholder="Haslo_">
             </div>
-          </div>
-          <div class="menu__nav">
             <div class="menu__box -full">
-              <input class="menu__input -none" placeholder="wpisz szukaną frazę">
-              <button class="menu__btn" type="button">SZUKAJ</button>
+              <div class="menu__border">
+                <input class="menu__input -none" placeholder="wpisz szukaną frazę">
+                <button class="menu__btn" type="button">SZUKAJ</button>
+              </div>
             </div>
           </div>
         </div>
@@ -66,158 +67,526 @@
       <div class="team">
         <div class="container">
           <div class="team__title">
-            <div class="team__box">
+            <div class="col75">
               <div class="title">
-                <div class="title__box">
+                <div class="title__box -padding">
                   <div class="title__text -title">TEAMY W POLSCE</div><a class="title__icon" href="#">
                     <div class="title__print">Drukuj stronę</div><img class="title__fa" src="components/title/src/print.png" alt="print"></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="team__box">
-            <div class="team__box -col60">
+          <div class="col75">
+            <div class="col60">
               <div class="team__map">
                 <div class="map"><img class="map__img" src="components/map/src/map.jpg" alt="map"></div>
               </div>
             </div>
-            <div class="team__box -col40">
+            <div class="col40">
               <div class="teamItem">
                 <div class="teamItem__top">
                   <div class="teamItem__title">LISTA TEAMÓW:</div>
-                  <select class="teamItem__select">
-                    <option class="teamItem__opt" value="WARMIŃSKO-MAZURSKIE">WARMIŃSKO-MAZURSKIE</option>
-                    <option class="teamItem__opt" value="MAZOWIECKIE">MAZOWIECKIE</option>
-                    <option class="teamItem__opt" value="POMORSKIE">POMORSKIE</option>
-                    <option class="teamItem__opt" value="ŚLĄSKIE">ŚLĄSKIE</option>
+                  <select class="teamItem__select" id="sample">
+                    <option class="teamItem__opt" data-list="1">WARMIŃSKO-MAZURSKIE</option>
+                    <option class="teamItem__opt" data-list="2">MAZOWIECKIE</option>
+                    <option class="teamItem__opt" data-list="3">POMORSKIE</option>
+                    <option class="teamItem__opt" data-list="4">ŚLĄSKIE</option>
                   </select>
                 </div>
-                <div class="teamItem__bot">
-                  <div class="teamItem__content">
-                    <div class="teamItem__name">NAZWA TEAMU</div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LOKACJA:</div>
-                      <div class="teamItem__text -black">OLSZTYN</div>
+                <div class="team__all">
+                  <div class="teamItem__bot" data-list="1">
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAasdasdMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
                     </div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LISTA CZŁONKÓW:</div>
-                      <div class="teamItem__text -black">16</div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
                     </div>
-                    <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
-                    <div class="teamItem__border"></div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="page"><a class="page__item -small" href="#">&lt;&lt;</a><a class="page__item" href="#">1</a><a class="page__item" href="#">2</a><a class="page__item" href="#">3</a><a class="page__item" href="#">4</a><a class="page__item" href="#">5</a><a class="page__item" href="#">...12...</a><a class="page__item" href="#">20</a><a class="page__item" href="#">21</a><a class="page__item" href="#">22</a><a class="page__item" href="#">23</a><a class="page__item" href="#">24</a><a class="page__item -small" href="#">&gt;&gt;</a></div>
+                    </div>
                   </div>
-                  <div class="teamItem__content">
-                    <div class="teamItem__name">NAZWA TEAMU</div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LOKACJA:</div>
-                      <div class="teamItem__text -black">OLSZTYN</div>
+                  <div class="teamItem__bot" data-list="2">
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">Agrafki zagłady</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
                     </div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LISTA CZŁONKÓW:</div>
-                      <div class="teamItem__text -black">16</div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
                     </div>
-                    <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
-                    <div class="teamItem__border"></div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="page"><a class="page__item -small" href="#">&lt;&lt;</a><a class="page__item" href="#">1</a><a class="page__item" href="#">2</a><a class="page__item" href="#">3</a><a class="page__item" href="#">4</a><a class="page__item" href="#">5</a><a class="page__item" href="#">...12...</a><a class="page__item" href="#">20</a><a class="page__item" href="#">21</a><a class="page__item" href="#">22</a><a class="page__item" href="#">23</a><a class="page__item" href="#">24</a><a class="page__item -small" href="#">&gt;&gt;</a></div>
+                    </div>
                   </div>
-                  <div class="teamItem__content">
-                    <div class="teamItem__name">NAZWA TEAMU</div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LOKACJA:</div>
-                      <div class="teamItem__text -black">OLSZTYN</div>
+                  <div class="teamItem__bot" data-list="3">
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">Ziomy atomy</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
                     </div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LISTA CZŁONKÓW:</div>
-                      <div class="teamItem__text -black">16</div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
                     </div>
-                    <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
-                    <div class="teamItem__border"></div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
+                    </div>
+                    <div class="teamItem__content">
+                      <div class="page"><a class="page__item -small" href="#">&lt;&lt;</a><a class="page__item" href="#">1</a><a class="page__item" href="#">2</a><a class="page__item" href="#">3</a><a class="page__item" href="#">4</a><a class="page__item" href="#">5</a><a class="page__item" href="#">...12...</a><a class="page__item" href="#">20</a><a class="page__item" href="#">21</a><a class="page__item" href="#">22</a><a class="page__item" href="#">23</a><a class="page__item" href="#">24</a><a class="page__item -small" href="#">&gt;&gt;</a></div>
+                    </div>
                   </div>
-                  <div class="teamItem__content">
-                    <div class="teamItem__name">NAZWA TEAMU</div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LOKACJA:</div>
-                      <div class="teamItem__text -black">OLSZTYN</div>
+                  <div class="teamItem__bot" data-list="4">
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">familoki</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
                     </div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LISTA CZŁONKÓW:</div>
-                      <div class="teamItem__text -black">16</div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
                     </div>
-                    <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
-                    <div class="teamItem__border"></div>
-                  </div>
-                  <div class="teamItem__content">
-                    <div class="teamItem__name">NAZWA TEAMU</div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LOKACJA:</div>
-                      <div class="teamItem__text -black">OLSZTYN</div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
                     </div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LISTA CZŁONKÓW:</div>
-                      <div class="teamItem__text -black">16</div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
                     </div>
-                    <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
-                    <div class="teamItem__border"></div>
-                  </div>
-                  <div class="teamItem__content">
-                    <div class="teamItem__name">NAZWA TEAMU</div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LOKACJA:</div>
-                      <div class="teamItem__text -black">OLSZTYN</div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
                     </div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LISTA CZŁONKÓW:</div>
-                      <div class="teamItem__text -black">16</div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
                     </div>
-                    <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
-                    <div class="teamItem__border"></div>
-                  </div>
-                  <div class="teamItem__content">
-                    <div class="teamItem__name">NAZWA TEAMU</div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LOKACJA:</div>
-                      <div class="teamItem__text -black">OLSZTYN</div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
                     </div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LISTA CZŁONKÓW:</div>
-                      <div class="teamItem__text -black">16</div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
                     </div>
-                    <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
-                    <div class="teamItem__border"></div>
-                  </div>
-                  <div class="teamItem__content">
-                    <div class="teamItem__name">NAZWA TEAMU</div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LOKACJA:</div>
-                      <div class="teamItem__text -black">OLSZTYN</div>
+                    <div class="teamItem__content">
+                      <div class="teamItem__name">NAZWA TEAMU</div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LOKACJA:</div>
+                        <div class="teamItem__text -black">OLSZTYN</div>
+                      </div>
+                      <div class="teamItem__box">
+                        <div class="teamItem__text">LISTA CZŁONKÓW:</div>
+                        <div class="teamItem__text -black">16</div>
+                      </div>
+                      <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
+                      <div class="teamItem__border"></div>
                     </div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LISTA CZŁONKÓW:</div>
-                      <div class="teamItem__text -black">16</div>
+                    <div class="teamItem__content">
+                      <div class="page"><a class="page__item -small" href="#">&lt;&lt;</a><a class="page__item" href="#">1</a><a class="page__item" href="#">2</a><a class="page__item" href="#">3</a><a class="page__item" href="#">4</a><a class="page__item" href="#">5</a><a class="page__item" href="#">...12...</a><a class="page__item" href="#">20</a><a class="page__item" href="#">21</a><a class="page__item" href="#">22</a><a class="page__item" href="#">23</a><a class="page__item" href="#">24</a><a class="page__item -small" href="#">&gt;&gt;</a></div>
                     </div>
-                    <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
-                    <div class="teamItem__border"></div>
-                  </div>
-                  <div class="teamItem__content">
-                    <div class="teamItem__name">NAZWA TEAMU</div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LOKACJA:</div>
-                      <div class="teamItem__text -black">OLSZTYN</div>
-                    </div>
-                    <div class="teamItem__box">
-                      <div class="teamItem__text">LISTA CZŁONKÓW:</div>
-                      <div class="teamItem__text -black">16</div>
-                    </div>
-                    <div class="teamItem__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui. Maecenas malesuada...</div>
-                    <div class="teamItem__border"></div>
-                  </div>
-                  <div class="teamItem__content">
-                    <div class="page"><a class="page__item -small" href="#">&lt;&lt;</a><a class="page__item" href="#">1</a><a class="page__item" href="#">2</a><a class="page__item" href="#">3</a><a class="page__item" href="#">4</a><a class="page__item" href="#">5</a><a class="page__item" href="#">...12...</a><a class="page__item" href="#">20</a><a class="page__item" href="#">21</a><a class="page__item" href="#">22</a><a class="page__item" href="#">23</a><a class="page__item" href="#">24</a><a class="page__item -small" href="#">&gt;&gt;</a></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="team__box -col25">
+          <div class="col25">
             <div class="team__add">
               <div class="add">
                 <div class="add__text">DODAJ TEAM</div><a class="add__fa -border fa fa-plus" href="#"></a>

@@ -5,6 +5,10 @@
 
   &__item
     width: 100%
+    position: relative
+    font-size: 100px
+    color: white
+    font-weight: 300
     +clearfix
     +PHONE_ONLY_600
       text-align: center
@@ -15,6 +19,8 @@
   &__content
     position: absolute
     bottom: 30px
+    +TAB_MAX
+      bottom: 10px
 
     &.-top
       width: 100%
@@ -26,6 +32,10 @@
     padding: 50px 0 0 30px
     +clearfix
     margin-left: -10px
+    float: left
+    box-sizing: border-box
+    +PHONE_ONLY_480
+      padding: 10px 0 10px 30px
 
     &.-padding
       padding: 0 0 0 20px
@@ -36,6 +46,8 @@
       float: left
       box-sizing: border-box
       margin-left: 0
+      +PHONE_ONLY
+        display: none
 
   &__text
     font-size: 12px
@@ -57,6 +69,9 @@
     float: none
     font-size: 34px
     color: white
+    line-height: 34px
+    +PHONE_ONLY_600
+      font-size: 22px
 
   &__icons
     width: 80px
@@ -74,9 +89,26 @@
 
     &.-padding
       padding: 15px 0
+      font-size: 11px
+      +TAB_MAX
+        padding: 5px 0
 
   &__info
     color: white
     font-size: 13px
     font-family: Arial, Helvetica, sans-serif
     text-shadow: 0 1px 1px black
+    +TAB_MAX
+      font-size: 11px
+
+  &__prev
+    position: absolute
+    z-index: 100
+    top: 20px
+    right: 100px
+
+  &__next
+    position: absolute
+    z-index: 100
+    top: 20px
+    right: 40px

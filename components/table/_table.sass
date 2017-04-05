@@ -11,9 +11,19 @@
     padding: 5px 10px
     text-align: center
     width: 100%
+    +TAB_MAX
+      width: 33%
+      float: left
+      box-sizing: border-box
+    +PHONE_ONLY
+      width: 50%
+    +PHONE_ONLY_480
+      width: 100%
 
     &.-border
       border-bottom: 1px solid gray
+      +TAB_MAX
+        display: none
 
   &__tableData
     padding: 5px 5px 0
@@ -21,33 +31,119 @@
     font-size: 11px
     float: left
     text-align: center
+    position: relative
+    +TAB_MAX
+      text-align: right
 
     &:nth-child(1)
       width: 7%
+      +TAB_MAX
+        width: 100%
+        float: left
+
+      &:before
+        +TAB_MAX
+          content: 'DATA'
+          position: absolute
+          top: 15px
+          left: 20px
 
     &:nth-child(2)
       width: 14%
+      +TAB_MAX
+        width: 100%
+        float: left
+
+      &:before
+        +TAB_MAX
+          content: 'NAZWA IMPREZY'
+          position: absolute
+          top: 15px
+          left: 20px
 
     &:nth-child(3)
       width: 11%
+      +TAB_MAX
+        width: 100%
+        float: left
+
+      &:before
+        +TAB_MAX
+          content: 'MIEJSCE'
+          position: absolute
+          top: 15px
+          left: 20px
 
     &:nth-child(4)
       width: 7%
+      +TAB_MAX
+        width: 100%
+        float: left
+
+      &:before
+        +TAB_MAX
+          content: 'DYSTANS(M)'
+          position: absolute
+          top: 15px
+          left: 20px
 
     &:nth-child(5)
       width: 7%
+      +TAB_MAX
+        width: 100%
+        float: left
+
+      &:before
+        +TAB_MAX
+          content: 'RODZAJ'
+          position: absolute
+          top: 15px
+          left: 20px
 
     &:nth-child(6)
       width: 7%
+      +TAB_MAX
+        width: 100%
+        float: left
+
+      &:before
+        +TAB_MAX
+          content: 'ILOSĆ MIEJSC'
+          position: absolute
+          top: 15px
+          left: 20px
 
     &:nth-child(7)
       width: 12%
+      +TAB_MAX
+        width: 100%
+        float: left
+
+      &:before
+        +TAB_MAX
+          content: 'ATEST'
+          position: absolute
+          top: 15px
+          left: 20px
 
     &:nth-child(8)
       width: 14%
+      +TAB_MAX
+        width: 100%
+        float: left
+
+      &:before
+        +TAB_MAX
+          content: 'PROGNOZA POGODY'
+          position: absolute
+          top: 15px
+          left: 20px
 
     &:nth-child(9)
       width: 21%
+      +TAB_MAX
+        width: 100%
+        float: left
 
     &.-right
       text-align: right
@@ -58,30 +154,37 @@
 
   &__text
     border: 1px solid black
-    padding: 10px 13px
+    padding: 10px 3px
     font-size: 10px
+    text-align: center
+    +TAB_MAX
+      text-align: right
 
     &.-weather
       font-size: 14px
       text-align: center
       display: flex
       justify-content: space-between
+      +TAB_MAX
+        justify-content: flex-end
 
   &__fa
     display: inline-block
     box-sizing: border-box
 
   &__item
-    padding: 5px
+    padding: 5px 3px
     box-sizing: border-box
     float: left
     margin-top: 3px
 
   &__btn
-    padding: 10px
+    padding: 5px
     background: $yellow
     border: 1px solid $yellow
     font-weight: 700
+    font-size: 11px
+    box-sizing: border-box
 
     &:hover
       border: 1px solid black

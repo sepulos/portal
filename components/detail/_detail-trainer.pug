@@ -3,24 +3,24 @@
   .container
 
     .detail__title
-      .detail__box
+      .col75
         include ../title/_title-print
-    .detail__box
-      .detail__box.-col33
-        img.detail__ad(src="components/detail/src/train.jpg" alt="detail")
+    .col75
+      .col33
+        img.detail__img(src="components/detail/src/train.jpg" alt="detail")
 
-      .detail__box.-col66
+      .col66
         include ../content/_content-trainer
         include ../social/_social
 
         include ../product/_product
 
-      .detail__box.-full
+      .col75
         include ../bigBtn/_bigBtn
 
-    .detail__box.-col25
+    .col25
 
-      img.detail__ad.-margin(src="components/detail/src/ad.jpg" alt="best")
+      img.detail__ad(src="components/detail/src/ad.jpg" alt="best")
 
       .detail__contact
         include ../contact/_contact

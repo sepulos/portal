@@ -1,12 +1,14 @@
 .menu
   .container
+    .menu__bars-vis(type="button")
+      i.menu__fa.fa.fa-bars(aria-hidden="true")
     .menu__bars(type="button")
       i.menu__fa.fa.fa-bars(aria-hidden="true")
     a.menu__logo(href="main.html")
       include ../logo/_logo
 
 
-    .menu__nav.-border
+    .menu__nav
       .menu__box
         a.menu__item(href="main.html") Forum
         a.menu__item(href="family.html") Reklama
@@ -17,9 +19,10 @@
         input.menu__input.-margin(placeholder="Login_")
         input.menu__input(placeholder="Haslo_")
 
-    .menu__nav
+
       .menu__box.-full
-        input.menu__input.-none(placeholder="wpisz szukaną frazę")
-        button.menu__btn(type="button") SZUKAJ
+        .menu__border
+          input.menu__input.-none(placeholder="wpisz szukaną frazę")
+          button.menu__btn(type="button") SZUKAJ
 
 

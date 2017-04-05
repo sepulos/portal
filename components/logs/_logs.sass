@@ -3,6 +3,7 @@
   color: black
   padding: 20px
   border: 1px solid lightgray
+  margin-bottom: 10px
 
   &__box
     width: 100%
@@ -23,6 +24,11 @@
     font-size: 12px
     float: left
     +flex
+    +PHONE_ONLY_600
+      width: 33.33%
+    +PHONE_ONLY_480
+      width: 50%
+      height: 60px
 
   &__img
     width: 80px

@@ -4,6 +4,7 @@
   width: 100%
   position: relative
   padding-top: 30px
+  margin-bottom: 20px
 
   &__nav
     width: 77%
@@ -11,25 +12,49 @@
     padding-bottom: 20px
     margin: 10px 0
     box-sizing: border-box
-
-    &.-border
-      border-bottom: 1px solid lightgrey
+    +PHONE_ONLY
+      +clearfix
+      position: absolute
+      width: 100%
+      margin: 0
+      padding: 70px 15px 30px
+      top: 0
+      left: 0
+      background: white
+      color: black
+      text-align: center
+    +PHONE_ONLY_480
+      left: 3px
 
   &__box
     float: left
+    +PHONE_ONLY
+      width: 100%
+      +clearfix
 
     &.-full
       width: 100%
-      border: 1px solid lightgray
-      margin-top: 10px
-      position: relative
+      border-top: 1px solid lightgray
+      margin-top: 20px
 
     &.-float
       float: right
+      +PHONE_ONLY
+        width: 100%
+
+  &__border
+    +clearfix
+    position: relative
+    width: 100%
+    margin-top: 20px
+    border: 1px solid lightgray
+    display: inline-block
 
   &__input
     font-size: 12px
     padding: 2px 5px
+    box-sizing: border-box
+    +clearfix
 
     &.-none
       border: none
@@ -39,16 +64,30 @@
 
     &.-margin
       margin-right: 25px
+      +TAB_ONLY_880
+        margin-right: 5px
+      +PHONE_ONLY_480
+        margin: 0
 
   &__item
     font-size: 12px
     font-weight: 700
     padding: 10px 20px
     color: gray
+    +TAB_MAX
+      padding: 5px 10px
+    +PHONE_ONLY
+      width: 100%
+      +clearfix
+      color: black
+      font-size: 17px
 
     &:hover
       color: $yellow
       background: black
+      +PHONE_ONLY
+        color: black
+        background: white
 
   &__text
     font-size: 12px
@@ -56,6 +95,12 @@
     padding: 0 20px
     font-weight: 700
     color: gray
+    +TAB_ONLY_880
+      padding: 5px 10px 0 0
+    +PHONE_ONLY
+      float: none
+      color: black
+      padding-bottom: 10px
 
   &__btn
     float: right
@@ -84,8 +129,14 @@
     z-index: 2
     +clearfix
     +flex
+    +PHONE_ONLY
+      width: 200px
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
 
-  &__bars
+  &__bars-vis
     float: left
     width: 100%
     margin: 0 10px
@@ -93,6 +144,17 @@
     cursor: pointer
     z-index: 2
     font-size: 24px
+
+  &__bars
+    position: absolute
+    top: 0
+    right: 0
+    color: gray
+    font-size: 44px
+    padding: 0 10px
+    display: none
+    cursor: pointer
+    z-index: 2
 
   &__fa
     background: black
